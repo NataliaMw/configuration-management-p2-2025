@@ -37,5 +37,13 @@
   <footer>
     <p>&copy; 2025 Sistema de la Suerte. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    function adivinarNumero() {
+      const numero = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("resultado").innerText = 
+        "✨ Tu número de la suerte es: " + numero + " ✨";
+    }
+  </script>
 </body>
 </html>
