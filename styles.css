@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid #f39c12;
+  }
+  
+  section {
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+  
+  #inicio { background-color: #ecf0f1; }
+  #about { background-color: #dfe6e9; }
+  #contacto { background-color: #bdc3c7; }
