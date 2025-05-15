@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tu Número de la Suerte</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#juego">Adivina tu número</a></li>
-        <li><a href="#nosotros">About Us</a></li>
-      </ul>
-    </nav>
-    <h1 id="inicio">Bienvenido al sistema de la suerte</h1>
-    <p>¡Descubre tu número de la suerte con nuestro sistema místico y divertido!</p>
-  </header>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-  <main>
-    <section id="juego">
-      <h2>¿Listo para conocer tu número?</h2>
-      <p>Presiona el botón y deja que la suerte decida por ti.</p>
-      <button onclick="adivinarNumero()">¡Adivina mi número de la suerte!</button>
-      <div id="resultado"></div>
-    </section>
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Registro de Usuario</h2>
+    <form class="space-y-4">
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nombres</label>
+        <input type="text" name="nombres" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+      </div>
 
-    <section id="nosotros">
-      <h2>About Us</h2>
-      <p>Somos un grupo apasionado por la magia de los números y el entretenimiento digital. 
-      Este pequeño proyecto busca hacerte sonreír y divertirte un poco con tu destino numérico.</p>
-    </section>
-  </main>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Apellidos</label>
+        <input type="text" name="apellidos" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Sistema de la Suerte. Todos los derechos reservados.</p>
-  </footer>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Teléfono</label>
+        <input type="tel" name="telefono" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+      </div>
 
-  <script>
-    function adivinarNumero() {
-      const numero = Math.floor(Math.random() * 100) + 1;
-      document.getElementById("resultado").innerText = 
-        "✨ Tu número de la suerte es: " + numero + " ✨";
-    }
-  </script>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nombre de Usuario</label>
+        <input type="text" name="usuario" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Contraseña</label>
+        <input type="password" name="contraseña" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+      </div>
+
+      <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition">
+        Registrarse
+      </button>
+    </form>
+  </div>
+
 </body>
 </html>
