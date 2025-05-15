@@ -1,0 +1,19 @@
+{
+  "name": "configuration-management-p2-2025",
+  "version": "1.0.0",
+  "description": "Backend básico con Express y lowdb",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "lowdb": "^7.0.1"
+  }
+}
