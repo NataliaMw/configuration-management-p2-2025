@@ -42,24 +42,14 @@ button { padding: 10px 15px; background-color: #0066cc; color: white; border: no
     <h3>Our Mission</h3>
     <p>To demonstrate collaborative development techniques while creating useful and innovative applications.</p>
 </section>
-
 <section id="contact">
-    <h2>Contact Form</h2>
-    <form id="contactForm">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-    </form>
+  <h2>Contact Us</h2>
+  <form method="POST" action="/contact">
+    <label>Name:<br><input type="text" name="name" required></label><br>
+    <label>Email:<br><input type="email" name="email" required></label><br>
+    <label>Message:<br><textarea name="message" required></textarea></label><br>
+    <button type="submit">Send</button>
+  </form>
 </section>
 
 <footer>
@@ -76,3 +66,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 </script>
 </body>
 </html>
+
