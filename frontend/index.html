@@ -7,6 +7,14 @@
 <style>
 body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
 header, nav, section, footer { margin-bottom: 20px; }
+nav ul { list-style-type: none; padding: 0; display: flex; background-color: #f1f1f1; }
+nav ul li { margin-right: 15px; padding: 10px; }
+nav ul li a { text-decoration: none; color: #333; font-weight: bold; }
+nav ul li a:hover { color: #0066cc; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; }
+.form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #ddd; }
+button { padding: 10px 15px; background-color: #0066cc; color: white; border: none; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -15,15 +23,43 @@ header, nav, section, footer { margin-bottom: 20px; }
 </header>
 
 <nav>
-<!-- Navigation menu will go here -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Form</a></li>
+    </ul>
 </nav>
 
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to our collaborative project homepage. We are excited to share our work with you!</p>
+</section>
+
 <section id="about">
-<!-- "About Us" section placeholder -->
+    <h2>About Us</h2>
+    <p>We are a team of developers working together to create amazing solutions using configuration management best practices.</p>
+    <p>Our team members bring diverse skills and expertise to the table, allowing us to tackle complex problems effectively.</p>
+    <h3>Our Mission</h3>
+    <p>To demonstrate collaborative development techniques while creating useful and innovative applications.</p>
 </section>
 
 <section id="contact">
-<!-- Contact form placeholder -->
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer>
@@ -32,6 +68,11 @@ header, nav, section, footer { margin-bottom: 20px; }
 
 <script>
 // JS logic for navigation or other interactive components
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+    this.reset();
+});
 </script>
 </body>
 </html>
