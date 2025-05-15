@@ -1,0 +1,9 @@
+{
+  "users": [
+    {
+      "username": "juan",
+      "password": "$2b$10$KV/5u1rxPPtnOow5H0wOhuSvWTcB3dc82XMXDa/yQmiy0gZ/9bqpq",
+      "phone": "5551234567"
+    }
+  ]
+}
