@@ -2,11 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Formulario de Estudiante</title>
+  <title>Mi Proyecto de Grupo</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="form-container">
+
+  <nav>
+    <ul>
+      <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+      <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+      <li><a href="#contacto" class="nav-link">Formulario</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <h1>Inicio</h1>
+    <p>Bienvenido al proyecto de grupo.</p>
+  </section>
+
+  <section id="about">
+    <h1>Sobre Nosotros</h1>
+    <p>Esta sección fue implementada por el Developer A.</p>
+  </section>
+
+  <section id="contacto">
     <h2>Formulario de Estudiante</h2>
     <form id="estudianteForm">
       <label for="nombre">Nombre</label>
@@ -26,9 +46,10 @@
 
       <button type="submit">Enviar!</button>
     </form>
-    <div id="resultado"></div>
-  </div>
+  </section>
 
+  <script src="index.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
